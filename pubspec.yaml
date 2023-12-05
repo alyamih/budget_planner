@@ -43,6 +43,7 @@ dependencies:
   datepicker_dropdown: ^0.0.9
   intl: ^0.18.1
   device_preview: ^1.1.0
+  flutter_inappwebview: ^5.8.0
 
 dev_dependencies:
   flutter_test:

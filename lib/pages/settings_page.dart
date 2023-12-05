@@ -1,4 +1,5 @@
 import 'package:budget_planner/pages/home_page.dart';
+import 'package:budget_planner/pages/show_screen.dart';
 import 'package:budget_planner/theme.dart';
 import 'package:budget_planner/theme_notifier.dart';
 import 'package:flutter/cupertino.dart';
@@ -38,8 +39,13 @@ class _SettingsPageState extends State<SettingsPage> {
           ),
           InkWell(
             onTap: () {
-              // page = EPageOnSelect.policyPage;
-              // setState(() {});
+              Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                    builder: (BuildContext context) =>
+                        const ReadTermsOrPrivacyScreenView(
+                          link: 'google.com',
+                        )),
+              );
             },
             child: Container(
               padding: const EdgeInsets.only(top: 15, bottom: 15),
@@ -62,8 +68,13 @@ class _SettingsPageState extends State<SettingsPage> {
           ),
           InkWell(
             onTap: () {
-              // page = EPageOnSelect.termsPage;
-              // setState(() {});
+              Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                    builder: (BuildContext context) =>
+                        const ReadTermsOrPrivacyScreenView(
+                          link: 'google.com',
+                        )),
+              );
             },
             child: Container(
               padding: const EdgeInsets.only(top: 15, bottom: 15),
